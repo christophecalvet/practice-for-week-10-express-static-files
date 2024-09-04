@@ -12,7 +12,10 @@ const path = require('path');
 
 
 //Part 3
-app.use('/stylesheets',express.static(path.join(__dirname, 'assets/css')));
+//app.use('/stylesheets',express.static(path.join(__dirname, 'assets/css')));
+
+//Bonus
+app.use('/stickers',express.static(path.join(__dirname, 'assets/images')));
 
 const port = 5000;
 app.listen(port, () => console.log('Server is listening on port', port));
